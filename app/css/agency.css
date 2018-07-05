@@ -519,7 +519,10 @@ ul.social-buttons {
   background-color: red; }
 
 .header-small-text {
-  font-family: Arial, Helvetica, sans-serif; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px; }
 
 .card-service {
   background-color: #f9f9f9;
@@ -601,3 +604,10 @@ ul.social-buttons {
 .contact-input-lg:focus {
   background-color: rgba(0, 0, 0, 0);
   color: white; }
+
+.modal-text {
+  text-align: left; }
+
+.modal-list {
+  text-align: left;
+  list-style-type: none; }
