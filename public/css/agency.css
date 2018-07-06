@@ -185,13 +185,18 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: rgba(0, 0, 0, 0.7);
   }
-  /* line 67, D:/Development/Websites/Yaketing/Yaketing/sass/_navbar.scss */
+  /* line 69, D:/Development/Websites/Yaketing/Yaketing/sass/_navbar.scss */
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
   }
+}
+
+/* line 78, D:/Development/Websites/Yaketing/Yaketing/sass/_navbar.scss */
+.navbar-border {
+  border-bottom: 1px rgba(255, 255, 255, 0.4) solid !important;
 }
 
 /* line 2, D:/Development/Websites/Yaketing/Yaketing/sass/_masthead.scss */
