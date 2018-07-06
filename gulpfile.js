@@ -6,16 +6,16 @@ var browserSync = require('browser-sync');
 gulp.task('watch', function(){
     browserSync({
         server: {
-            baseDir: 'app/'
+            baseDir: '/'
         }
     })
-    gulp.watch('./app/sass/*.scss', ['sass-watch']);
+    gulp.watch('./sass/*.scss', ['sass-watch']);
 });
 
 gulp.task('sass', function() {
-    return gulp.src('./app/sass/*.scss')
+    return gulp.src('./sass/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./app/css'))
+        .pipe(gulp.dest('./public/css'))
 });
 
 gulp.task('sass-watch', ['sass'], browserSync.reload)
