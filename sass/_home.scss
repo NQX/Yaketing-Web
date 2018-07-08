@@ -4,16 +4,25 @@
     color: white;
 }
 
+.big-heading {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
 
 .btn-round {
     background-color: $primary;
     color: white;   
-    height: 38px;
+    height: 45px;
     width: 150px;
     border-radius: 22px;
     font-size: 14px;
     margin-top: 6px;
-    padding-top: 8px;
+    padding-top: 10px;
+    text-transform: uppercase;
+
 }
 
 .btn-round:hover {
@@ -21,11 +30,30 @@
     background-color: red;
 }
 
+.btn-round2 {
+    background-color: rgba(0,0,0,0.0);
+    color: white;   
+    height: 45px;
+    width: 150px;
+    border-radius: 22px;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 20px;
+    padding-top: 10px;
+    border: 2px solid white;
+    text-transform: uppercase;
+}
+
+.btn-round2:hover {
+    color: white;
+    background-color: red;
+}
+
 .header-small-text {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }
 
 
@@ -161,4 +189,79 @@
 .modal-list {
     text-align: left;
     list-style-type: none;
+}
+
+
+// top part
+
+#top-part {
+    //background-color: lightgrey;
+    padding-top: 0;
+}
+
+.offset-container {
+    position: relative;
+    top: -65px;
+}
+
+//font awesome stuff
+
+.fa-shadow {
+    box-shadow: 0px 10px 30px 0 rgba(49, 52, 57, 0.3), 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.icon-circle {
+    background-color: $primary;
+    height: 130px;
+    width: 130px;
+    border-radius: 140px;
+    margin: auto;
+}
+
+.center-vertically {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+//slice 1
+#slice-1 {
+    height: 90%;
+    background-color: $gray-900;
+
+}
+
+.slice-text {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    //font-weight: normal;
+}
+
+
+
+//bottom
+
+#bottom {
+    background-color : $gray-900;
+    color: white;
+}
+
+
+.small-btn {
+    display: inline;
+    background-color: $primary;
+    border: none;
+    color: white;
+    margin-left: 0;
+    height: 32px;
+}
+
+.small-textbox {
+    display: inline;
+    width: 60%;
+    margin-right: 0;
+    border: 0;
+    height: 30px;
+    border: none;
 }

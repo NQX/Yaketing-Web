@@ -819,33 +819,63 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: white;
 }
 
-/* line 8, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 7, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.big-heading {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 62px;
+  line-height: 130%;
+  margin-bottom: 30px;
+}
+
+/* line 15, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .btn-round {
   background-color: #b9153a;
   color: white;
-  height: 38px;
+  height: 45px;
   width: 150px;
   border-radius: 22px;
   font-size: 14px;
   margin-top: 6px;
-  padding-top: 8px;
+  padding-top: 10px;
+  text-transform: uppercase;
 }
 
-/* line 19, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 28, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .btn-round:hover {
   color: white;
   background-color: red;
 }
 
-/* line 24, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
-.header-small-text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 30px;
+/* line 33, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.btn-round2 {
+  background-color: transparent;
+  color: white;
+  height: 45px;
+  width: 150px;
+  border-radius: 22px;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-left: 20px;
+  padding-top: 10px;
+  border: 2px solid white;
+  text-transform: uppercase;
 }
 
-/* line 34, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 47, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.btn-round2:hover {
+  color: white;
+  background-color: red;
+}
+
+/* line 52, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.header-small-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* line 62, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .card-service {
   background-color: #f9f9f9;
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
@@ -859,18 +889,18 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   transition: box-shadow 0.3s ease-in-out;
 }
 
-/* line 48, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 76, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .card-service::hover {
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* line 57, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 85, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 #laptop {
   background-color: maroon;
   height: 800px;
 }
 
-/* line 62, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 90, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .laptop-img {
   width: 80%;
   position: relative;
@@ -884,19 +914,19 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 }
 */
-/* line 82, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 110, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .shadow {
   box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* line 94, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 122, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .btn-contact {
   width: 250px;
   height: 70px;
   border-radius: 35px;
 }
 
-/* line 100, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 128, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .contact-subtext {
   color: white;
   font-size: 19px;
@@ -905,7 +935,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-bottom: 40px;
 }
 
-/* line 108, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 136, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .contact-input-sm {
   background-color: transparent;
   border-radius: 0;
@@ -917,19 +947,19 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   caret-color: white;
 }
 
-/* line 120, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 148, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .contact-input-sm:focus {
   background-color: transparent;
   color: white;
 }
 
-/* line 125, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 153, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .contact-input-sm::placeholder {
   color: red;
   opacity: 1;
 }
 
-/* line 131, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 159, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .contact-input-lg {
   background-color: transparent;
   border-radius: 0;
@@ -945,21 +975,91 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* line 148, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 176, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .contact-input-lg:focus {
   background-color: transparent;
   color: white;
 }
 
-/* line 157, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 185, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .modal-text {
   text-align: left;
 }
 
-/* line 161, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+/* line 189, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
 .modal-list {
   text-align: left;
   list-style-type: none;
+}
+
+/* line 197, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+#top-part {
+  padding-top: 0;
+}
+
+/* line 202, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.offset-container {
+  position: relative;
+  top: -65px;
+}
+
+/* line 209, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.fa-shadow {
+  box-shadow: 0px 10px 30px 0 rgba(49, 52, 57, 0.3), 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* line 213, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.icon-circle {
+  background-color: #b9153a;
+  height: 130px;
+  width: 130px;
+  border-radius: 140px;
+  margin: auto;
+}
+
+/* line 221, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.center-vertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 229, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+#slice-1 {
+  height: 90%;
+  background-color: #212529;
+}
+
+/* line 235, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.slice-text {
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+/* line 245, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+#bottom {
+  background-color: #212529;
+  color: white;
+}
+
+/* line 251, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.small-btn {
+  display: inline;
+  background-color: #b9153a;
+  border: none;
+  color: white;
+  margin-left: 0;
+  height: 32px;
+}
+
+/* line 260, D:/Development/Websites/Yaketing/Yaketing/sass/_home.scss */
+.small-textbox {
+  display: inline;
+  width: 60%;
+  margin-right: 0;
+  border: 0;
+  height: 30px;
+  border: none;
 }
 
 /* line 2, D:/Development/Websites/Yaketing/Yaketing/sass/_work.scss */
