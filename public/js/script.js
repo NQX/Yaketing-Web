@@ -14,3 +14,25 @@ $('#message').focus(function() {
         }, "normal")
     })
 */
+
+
+function onMailBtn(){
+    console.log('mail send')
+}
+
+/*
+var mail = require('sendmail')();
+
+mail( {
+    from:    'noreply@yaketing.com',
+    to:      'contact@yaketing.com',
+    subject: 'Kontaktanfrage via Form',
+    content: 'Kein Text'
+},
+function( err, response ) {
+    if(err) {
+        console.log(err);
+    }
+    console.dir(response);
+});
+*/
