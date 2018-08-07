@@ -1,4 +1,6 @@
+
 $(function() {
+
 
   $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
@@ -19,8 +21,11 @@ $(function() {
       }
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+      
+
       $.ajax({
-        url: "././mail/contact_me.php",
+        crossOrigin: true,
+        url: location.protocol + "//" + location.host + "/send",
         type: "POST",
         data: {
           name: name,
@@ -35,18 +40,19 @@ $(function() {
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
           $('#success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
+            .append("<strong>Ihre Nachricht wurde erfolgreich versendet. </strong>");
           $('#success > .alert-success')
             .append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
         },
-        error: function() {
+        error: function(xhr, ajaxOptions, thrownError) {
+          console.log('error in ajsax ' + xhr.status)
           // Fail message
           $('#success').html("<div class='alert alert-danger'>");
           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
-          $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+          $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", es gab ein Problem. Bitte versuche es später noch mal!"));
           $('#success > .alert-danger').append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
@@ -57,6 +63,8 @@ $(function() {
           }, 1000);
         }
       });
+      
+
     },
     filter: function() {
       return $(this).is(":visible");
